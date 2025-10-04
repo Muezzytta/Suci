@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Kesehatan Masyarakat</title>
+    
+    <style>
+        /* CSS Dimulai Di Sini */
+
+        /* Pengaturan Dasar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Header dan Navigasi */
+        header {
+            background-color: #007bff; /* Biru cerah, melambangkan kesehatan */
+            color: white;
+            padding: 10px 0;
+            border-bottom: 5px solid #0056b3;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #cce5ff;
+        }
+
+        /* Bagian Konten Utama */
+        .content-section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section h2 {
+            color: #007bff;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        /* Tombol */
+        .btn-primary {
+            display: inline-block;
+            background-color: #28a745; /* Hijau, melambangkan pertumbuhan/kesehatan */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Card Materi */
+        .materi-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .materi-card {
+            background-color: #e9ecef; /* Abu-abu muda */
+            padding: 20px;
+            border-radius: 6px;
+            flex: 1 1 calc(33.33% - 20px); /* 3 kartu per baris, menyesuaikan gap */
+            min-width: 250px;
+            box-sizing: border-box;
+        }
+
+        .materi-card h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        /* Form Kontak */
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40; /* Abu-abu gelap */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Media Queries untuk Responsif */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .materi-card-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* CSS Berakhir Di Sini */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Pusat Edukasi Kesehatan Komunitas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#materi">Materi Kesehatan</a></li>
+                    <li><a href="#kontak">Kontak Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="beranda" class="content-section">
+            <h2>Selamat Datang di Portal Edukasi Kesehatan 🏥</h2>
+            <p>Tujuan utama situs ini adalah *meningkatkan kesadaran* dan *mendorong perilaku hidup sehat* di tengah masyarakat, berfokus pada upaya *preventif* dan *promotif*.</p>
+            <p>Kesehatan adalah investasi terbaik. Mari kita mulai perubahan positif dari diri sendiri dan keluarga dengan informasi yang tepat!</p>
+            <a href="#materi" class="btn-primary">Lihat Materi Utama</a>
+        </section>
+
+        ---
+
+        <section id="materi" class="content-section">
+            <h2>Materi Utama: Perilaku Hidup Bersih dan Sehat (PHBS)</h2>
+            <p>PHBS adalah pilar utama kesehatan masyarakat. Ini mencakup sekumpulan perilaku yang wajib diterapkan di lingkungan rumah tangga dan komunitas. Pelaksanaannya membantu pencegahan berbagai penyakit menular dan tidak menular.</p>
+
+            <div class="materi-card-container">
+                <div class="materi-card">
+                    <h3>1. Mencuci Tangan dengan Sabun 🧼</h3>
+                    <p>Praktik sederhana yang paling efektif mencegah kuman. Lakukan di 5 waktu penting: sebelum makan, setelah dari toilet, setelah beraktivitas, sebelum menyiapkan makanan, dan setelah memegang hewan.</p>
+                </div>
+                <div class="materi-card">
+                    <h3>2. Penggunaan Air Bersih 💧</h3>
+                    <p>Memastikan seluruh anggota keluarga menggunakan air yang memenuhi syarat kesehatan, baik untuk minum, memasak, maupun kebersihan diri, untuk menghindari penyakit bawaan air.</p>
+                </div>
+                <div class="materi-card">
+                    <h3>3. Pemberantasan Jentik Nyamuk 🦟</h3>
+                    <p>Lakukan 3M Plus (Menguras, Menutup, Mendaur ulang) minimal seminggu sekali untuk mencegah demam berdarah dan penyakit tular vektor lainnya.</p>
+                </div>
+                <div class="materi-card">
+                    <h3>4. Makan Buah dan Sayur Setiap Hari 🍎🥦</h3>
+                    <p>Konsumsi gizi seimbang yang kaya vitamin, mineral, dan serat. Ini sangat penting untuk meningkatkan daya tahan tubuh dan mencegah penyakit kronis.</p>
+                </div>
+                <div class="materi-card">
+                    <h3>5. Tidak Merokok di Dalam Rumah 🚭</h3>
+                    <p>Lindungi anggota keluarga dari bahaya asap rokok (perokok pasif), terutama anak-anak. Ciptakan lingkungan rumah yang bebas asap rokok.</p>
+                </div>
+                <div class="materi-card">
+                    <h3>6. Aktivitas Fisik Teratur 🏃‍♀</h3>
+                    <p>Lakukan olahraga atau aktivitas fisik minimal 30 menit setiap hari. Aktivitas fisik menjaga kebugaran, mengelola berat badan, dan mengurangi stres.</p>
+                </div>
+            </div>
+        </section>
+        
+        ---
+
+        <section id="kontak" class="content-section">
+            <h2>Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan, saran, atau ingin berkontribusi dalam program pendidikan kesehatan, silakan isi formulir di bawah ini.</p>
+            <form action="#" method="POST" class="contact-form">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan/Saran:</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Edukasi Kesehatan Masyarakat. Dibangun untuk Komunitas Sehat.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
